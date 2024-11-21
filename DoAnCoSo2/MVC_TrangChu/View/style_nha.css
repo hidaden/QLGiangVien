@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+/* header */
+.header_tailieu {
+    font-size: 24px;
+    display: flex;
+}
+
+.timkiem {
+    flex: 1;
+    padding: 13px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    width: 725px;
+    background-color: #f0f4f9;
+}
+
+.timkiem:hover {
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.div_tim_kiem {
+    display: flex;
+}
+
+.user {
+    display: flex;
+    cursor: pointer;
+}
+
+.sign_out {
+    display: none;
+    width: 100px;
+    height: 30px;
+    background-color: #ffffff;
+    position: relative;
+    bottom: 460px;
+    left: 1350px;
+
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.sign_out:hover {
+    background-color: #efeaea;
+    ;
+}
+
+.sign_out_2 {
+    display: none;
+    width: 100px;
+    height: 15px;
+    background-color: #79c180;
+    position: relative;
+    bottom: 505px;
+    left: 1351px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* container */
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+/* filter */
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-options p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* document */
+.doc_tit {
+    position: relative;
+    bottom: 40px;
+}
+
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.document-card {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-chinhsua,
+.button-xoa {
+    width: 26.67%;
+    /* Thiết lập chiều rộng là 2/3 kích thước gốc */
+    height: auto;
+    /* Chiều cao tự động */
+    padding: 5px;
+    /* Khoảng đệm bên trong nút */
+    font-size: 0.875rem;
+    /* Kích thước chữ */
+    border: none;
+    /* Xóa viền nếu có */
+    cursor: pointer;
+    /* Con trỏ khi di chuột lên nút */
+    position: relative;
+    left: 40%;
+    bottom: 5px;
+    margin-bottom: 5px;
+    opacity: 0.6;
+}
+
+.document-icon {
+    color: #79c180;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+.document-card .title {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.document-card .date {
+    font-size: 12px;
+    color: #666;
+}
+
+.add-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #79c180;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* create-document */
+
+.Model {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Màu nền mờ */
+}
+
+.Model-content {
+    background-color: #fff;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 70px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f6f3f3;
+    border-radius: 5px;
+    background-color: #e8f0fe;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(227, 227, 227, 0.914);
+}
+
+.cancel-button {
+    color: black;
+}
+
+.submit-button {
+    color: black;
+}
+
+/* edit-name-ghichu */
+.Model-chinhsua {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Model-content-chinhsua {
+    background-color: #fff;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 70px;
+}
+
+/* delette-name-ghichu */
+.Model-xoa {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Model-content-xoa {
+    background-color: #fff;
+    width: 300px;
+    height: 120px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 70px;
+}
+
+/* <div> sign_out */
+.profile-card {
+    position: relative;
+    left: 1165px;
+    bottom: 263px;
+    width: 270px;
+    background: #e9f7e9;
+    /* Màu nền xanh nhạt */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.profile-card .header {
+    background-color: #79c180;
+    /* Màu header */
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-card .header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-card .header h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.profile-card .content {
+    padding: 15px;
+}
+
+.profile-card .content ul {
+    list-style: none;
+}
+
+.profile-card .content ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.profile-card .content ul li svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: #77b977;
+}
+
+.profile-card .footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}

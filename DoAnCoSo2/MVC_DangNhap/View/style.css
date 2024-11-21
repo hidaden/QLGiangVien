@@ -1,0 +1,98 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.phone-preview {
+    margin-right: 50px;
+}
+.phone-preview img{
+    max-height: 460px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+    object-fit: cover;
+}
+.phone-preview img {
+    height: 600px;
+}
+
+.login-form {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+}
+
+.login-form h1 {
+    font-family: 'Billabong', cursive;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    width: 100%;
+    background-color: #79c180;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #8e8e8e;
+}
+
+.or .line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or span {
+    margin: 0 10px;
+}
+
+
+.sign-up {
+    padding: 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.download-app {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.app-buttons img {
+    height: 40px;
+    margin: 5px;
+}
+
